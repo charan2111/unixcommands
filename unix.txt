@@ -1,0 +1,448 @@
+‘print working directory’ 
+$ pwd
+‘$ mkdir’ stands for ‘make directory’
+....................
+$ mkdir newfolder
+$ cd newfolder
+$ pwd
+Output: /home/charan/newfolder
+
+‘rmdir’ which stands for ‘remove directory’
+$ rmdir newfolder
+
+‘$ cd’ command stands for ‘change directory’ 
+
+The ‘ls’ command simply displays the contents of a directory.
+$ ls
+
+‘$ touch’ command creates a file
+
+$ cp ‘ command stands for ‘copy’
+
+ ‘$ mv’ command stands for ‘move
+ ‘$ rm ‘ command for remove and the ‘-r’ simply recursively deletes file. Try ‘$ rm filename.txt’ at your terminal
+
+ ‘$ chmod’ command stands for change mode command
+1. +w (stands for write and it changes file permissions to write) 
+2. +r (stands for read and it changes file permissions to read) 
+3. +x (generally it is used to make a file executable)
+exanple:
+
+‘$ sort’ sorts the contents of the file
+
+ grep is an acronym for ‘globally search a regular expression and print it’.The ‘$ grep’ command searches the specified input fully
+$ grep picture newsfile
+
+ ‘$ clear’ command is used to clean up the terminal 
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ makdir demo_1
+bash: makdir: command not found
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ mkdir demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ cd demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ config --global user.name "charan2111"
+bash: config: command not found
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ config --global user.name "charan2111"
+bash: config: command not found
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ git config --global user.name "charan2111"
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ git config --global user.email "charanyadav257@gmail.com"
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ whoami
+subramanyam_charan
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ pwd
+/c/Users/subramanyam_charan/Desktop/LOCAL REPO/demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ git init demo_2
+Initialized empty Git repository in C:/Users/subramanyam_charan/Desktop/LOCAL REPO/demo_1/demo_2/.git/
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ cd..
+bash: cd..: command not found
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ cd ..
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ git init demo_3
+Initialized empty Git repository in C:/Users/subramanyam_charan/Desktop/LOCAL REPO/demo_3/.git/
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ cd demo_3
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_3 (master)
+$ git pull https://github.com/charan2111/CHARAN.git
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), 2.44 KiB | 86.00 KiB/s, done.
+From https://github.com/charan2111/CHARAN
+ * branch            HEAD       -> FETCH_HEAD
+......................................................................................
+push
+.............................................................................
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ mkdir demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO
+$ cd demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1
+$ git init
+Initialized empty Git repository in C:/Users/subramanyam_charan/Desktop/LOCAL REPO/demo_1/.git/
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ touch demo.txt
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git remote add origin https://github.com/charan2111/demo.git
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git remote -v
+origin  https://github.com/charan2111/demo.git (fetch)
+origin  https://github.com/charan2111/demo.git (push)
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/charan2111/demo.git'
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ pwd
+/c/Users/subramanyam_charan/Desktop/LOCAL REPO/demo_1
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git add demo.txt
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git commit -m "xxxxx"
+[master (root-commit) e8f4271] xxxxx
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+subramanyam_charan@THBSSTRLPT-189 MINGW64 ~/Desktop/LOCAL REPO/demo_1 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/charan2111/demo/pull/new/master
+remote:
+To https://github.com/charan2111/demo.git
+ * [new branch]      master -> master
+
+....................................................................................
+linux 
+..........................................................................................
+ls unix
+
+cd
+cd
+
+cd /home/user/public /home/user/Public
+..
+ls Public
+cd Public
+ls
+
+ls -a
+
+cd
+pwd
+
+cd $home
+
+pwd
+cd Documents
+ls
+clear
+pwd
+cd ..
+mkdir torry
+cat > ./torry/f1.txt
+cd torry
+mkdir harries
+cat > ./harries/file2.txt
+cd
+pwd
+ls
+ls ./torry/harries
+cat ls
+./torry/harries/file2.txt
+................................................
+absolute path: full path of dirctry
+cat /home/user/torry/harry/cherry.txt
+.............................................
+use " cd ~ " to get the home path
+ then we have to enter the realative path
+.........................................
+rmdir to remove directry
+
+to create a filleuse cat > filename.txt
+ TO remove file use: rm harris (path)/file name.txt
+
+use:  cat file.txt for display th content
+
+use -wc for word count
+
+assignment :
+mov and rename
+
+........................................
+7/9/21
+......................................
+mov command
+mv.......................................................
+
+ to count words cat filename.txt | wc -w
+.........................................
+0 - ---
+1 - --x
+2 - -w-
+3 - -wx
+4 - r--
+5 - r-x
+6 - rw-
+7 - rwx pemission
+'''''''''''''''''''''''''''''''''''''
+ls commnads
+
+ls -s:- size of files
+
+ls -S:- sorting in file size
+
+ls -t:- sort file based on time of creation
+
+ls -T :- display tab space between two files
+
+ls -v :- natural sort
+ 
+ls -help :-dips all options in ls
+...................................................
+cut commands
+
+cut -b 2 filename.txt - to display the 2nd letter of every line in the file
+cut -b 4-6 file.txt - to disp charecter on that perticular range
+cut -b 3- file.txt - to display the letters from after 3rd char to end
+cut -b -4 file.txt - to disp the letter from begining to 4 th letter of line
+cut -c4 file.txt -disp the 4th char of line in file
+cut -c4,7 file.txt - disp the 4 nad 7 th char of the line in file
+
+cut -d- -f2 file.txt - disp the second field (marks - 3) prints 3
+cut -d- -f2,3 file.txt -disp the second and third field
+cut --complement -d- -f3 file.txt -disp the file except 3rf field
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+sort commands
+...........................................................
+sort file.txt = sortd the a-z
+sort -r file.txt = sorts in reverse order
+sort -k 2 file.txt = sorts the 2nd field
+sort -0 sort.txt sorting.txt - the out put of sorting.txt sves into sort.txt
+sort -t "," -k 1 file.txt sort as 
+........................................................
+No permission	---
+1	Execute permission	--x
+2	Write permission	-w-
+3	Execute and write permission: 1 (execute) + 2 (write) = 3	-wx
+4	Read permission	r--
+5	Read and execute permission: 4 (read) + 1 (execute) = 5	r-x
+6	Read and write permission: 4 (read) + 2 (write) = 6	rw-
+7	All permissions: 4 (read) + 2 (write) + 1 (execute) = 7	rwx
+.....................................................
+$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+$ head state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+-n num: Prints the first ‘num’ lines instead of first 10 lines
+$ head -n 5 state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+
+-q: It is used if more than 1 file is given
+
+$ head -q  state.txt capital.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+
+$ head -v state.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+#!/bin/sh
+
+NAME="Zara Ali"
+echo $NAME
+
+output:
+Zara Ali
+
+#!/bin/bash
+
+# Adding two values
+((sum=25+35))
+
+#Print the result
+echo $sum
+
+#!/bin/bash
+i=0
+
+while [ $i -le 2 ]
+do
+echo Number: $i
+((i++))
+done
+
+#!/bin/bash
+
+for (( counter=1; counter<=10; counter++ ))
+do
+echo -n "$counter "
+done
+
+printf "\n"
+
+#!/bin/bash
+
+echo -n "Enter a number: "
+read num
+
+if [[ $num -gt 10 ]]
+then
+echo "Number is greater than 10."
+fi
+
+#!/bin/bash
+
+read n
+if [ $n -lt 10 ];
+then
+echo "It is a one digit number"
+else
+echo "It is a two digit number"
+fi
+
+#!/bin/bash
+
+echo -n "Enter Number:"
+read num
+
+if [[ ( $num -lt 10 ) && ( $num%2 -eq 0 ) ]]; then
+echo "Even Number"
+else
+echo "Odd Number"
+fi
+
+#!/bin/bash
+
+echo -n "Enter any number:"
+read n
+
+if [[ ( $n -eq 15 || $n -eq 45 ) ]]
+then
+echo "You won"
+else
+echo "You lost!"
+fi
+
+#!/bin/bash
+echo -n "Enter first number:"
+read x
+echo -n "Enter second number:"
+read y
+(( sum=x+y ))
+echo "The result of addition=$sum
+
+#!/bin/bash
+echo "How long to wait?"
+read time
+sleep $time
+echo "Waited for $time seconds
+
